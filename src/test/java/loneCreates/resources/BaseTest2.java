@@ -51,7 +51,7 @@ public class BaseTest2 {
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			//WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver(options);
+			driver = new ChromeDriver();
 			driver.manage().window().setSize(new Dimension(1440,900));
 		} else if (browser.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();

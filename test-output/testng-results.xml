@@ -1,47 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-24T19:18:06 PKT" name="Default suite" finished-at="2024-04-24T19:18:27 PKT" duration-ms="20199">
+  <suite started-at="2024-05-02T22:56:51 PKT" name="Suite" finished-at="2024-05-02T22:57:12 PKT" duration-ms="21269">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.CucumberTestNgRunner@131ef10]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="itemcheck">
+        <method signature="InvalidLoginTest.InvalidLogin()[pri:0, instance:loneCreates.InvalidLoginTest@3e7dd664]" name="InvalidLogin" class="loneCreates.InvalidLoginTest"/>
+        <method signature="ValidLoginTest.validLogin()[pri:0, instance:loneCreates.ValidLoginTest@3da30852]" name="validLogin" class="loneCreates.ValidLoginTest"/>
+        <method signature="ItemsTest.Addnewitemtest()[pri:0, instance:loneCreates.ItemsTest@79c7532f]" name="Addnewitemtest" class="loneCreates.ItemsTest"/>
+        <method signature="ItemsTest.ItemExists()[pri:0, instance:loneCreates.ItemsTest@79c7532f]" name="ItemExists" class="loneCreates.ItemsTest"/>
+      </group> <!-- itemcheck -->
     </groups>
-    <test started-at="2024-04-24T19:18:06 PKT" name="Default test" finished-at="2024-04-24T19:18:27 PKT" duration-ms="20199">
-      <class name="cucumber.CucumberTestNgRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.CucumberTestNgRunner@131ef10]" started-at="2024-04-24T19:18:06 PKT" name="setUpClass" finished-at="2024-04-24T19:18:07 PKT" duration-ms="420" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@68f32020]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-05-02T22:56:51 PKT" name="LoginTest" finished-at="2024-05-02T22:57:07 PKT" duration-ms="16138">
+      <class name="loneCreates.ValidLoginTest">
+        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:loneCreates.ValidLoginTest@3da30852]" started-at="2024-05-02T22:56:51 PKT" name="driverInitialization" finished-at="2024-05-02T22:56:57 PKT" duration-ms="6724" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.CucumberTestNgRunner@131ef10]" started-at="2024-04-24T19:18:07 PKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-24T19:18:27 PKT" duration-ms="19723" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Positive login attemp"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- driverInitialization -->
+        <test-method signature="validLogin()[pri:0, instance:loneCreates.ValidLoginTest@3da30852]" started-at="2024-05-02T22:56:57 PKT" name="validLogin" finished-at="2024-05-02T22:56:57 PKT" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.CucumberTestNgRunner@131ef10]" started-at="2024-04-24T19:18:27 PKT" name="tearDownClass" finished-at="2024-04-24T19:18:27 PKT" duration-ms="26" status="PASS">
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loneCreates.ValidLoginTest@3da30852]" started-at="2024-05-02T22:56:57 PKT" name="tearDown" finished-at="2024-05-02T22:56:57 PKT" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.CucumberTestNgRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- loneCreates.ValidLoginTest -->
+      <class name="loneCreates.InvalidLoginTest">
+        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:loneCreates.InvalidLoginTest@3e7dd664]" started-at="2024-05-02T22:56:57 PKT" name="driverInitialization" finished-at="2024-05-02T22:57:07 PKT" duration-ms="9160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialization -->
+        <test-method signature="InvalidLogin()[pri:0, instance:loneCreates.InvalidLoginTest@3e7dd664]" started-at="2024-05-02T22:57:07 PKT" name="InvalidLogin" finished-at="2024-05-02T22:57:07 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loneCreates.InvalidLoginTest@3e7dd664]" started-at="2024-05-02T22:57:07 PKT" name="tearDown" finished-at="2024-05-02T22:57:07 PKT" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- loneCreates.InvalidLoginTest -->
+    </test> <!-- LoginTest -->
+    <test started-at="2024-05-02T22:57:07 PKT" name="openItems" finished-at="2024-05-02T22:57:12 PKT" duration-ms="4875">
+      <class name="loneCreates.ItemsTest">
+        <test-method is-config="true" signature="driverInitialization()[pri:0, instance:loneCreates.ItemsTest@79c7532f]" started-at="2024-05-02T22:57:07 PKT" name="driverInitialization" finished-at="2024-05-02T22:57:12 PKT" duration-ms="4753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverInitialization -->
+        <test-method signature="Addnewitemtest()[pri:0, instance:loneCreates.ItemsTest@79c7532f]" started-at="2024-05-02T22:57:12 PKT" name="Addnewitemtest" finished-at="2024-05-02T22:57:12 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Addnewitemtest -->
+        <test-method signature="ItemExists()[pri:0, instance:loneCreates.ItemsTest@79c7532f]" started-at="2024-05-02T22:57:12 PKT" name="ItemExists" finished-at="2024-05-02T22:57:12 PKT" depends-on-methods="loneCreates.ItemsTest.Addnewitemtest" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ItemExists -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loneCreates.ItemsTest@79c7532f]" started-at="2024-05-02T22:57:12 PKT" name="tearDown" finished-at="2024-05-02T22:57:12 PKT" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- loneCreates.ItemsTest -->
+    </test> <!-- openItems -->
+  </suite> <!-- Suite -->
 </testng-results>
