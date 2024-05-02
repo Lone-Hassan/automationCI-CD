@@ -36,7 +36,7 @@ public class ItemsTest extends BaseTest2 {
 		String toastmsg = items.toastMsg();
 		Assert.assertEquals(toastmsg, "Item Already Exists.");
 		//Thread.sleep(2000);*/
-		
+		//comment added in items test add new item
 		Assert.assertTrue(true);
 	}
 	
